@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('../fonts/Lato-Regular/LatoRegular.woff') format('woff');
+    src: url('../fonts/Lato-Regular/LatoRegular.svg') format('svg');
+    src: url('../fonts/Lato-Regular/LatoRegular.eot') format('embedded-opentype');
+    src: url('../fonts/Lato-Regular/LatoRegular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: '2211';
+    src: url('../fonts/Open Sans/2211.woff') format('woff');
+    src: url('../fonts/Open Sans/2211.svg') format('svg');
+    src: url('../fonts/Open Sans/2211.eot') format('embedded-opentype');
+    src: url('../fonts/Open Sans/2211.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'fontello';
+    src: url('../fonts/fontello-a0ae38e2/font/fontello.woff') format('woff');
+    src: url('../fonts/fontello-a0ae38e2/font/fontello.svg') format('svg');
+    src: url('../fonts/fontello-a0ae38e2/font/fontello.eot') format('embedded-opentype');
+    src: url('../fonts/fontello-a0ae38e2/font/fontello.ttf') format('truetype');
+}
+
+body{
+    background: #fafafa;
+}
+
 /* line 5, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -11,54 +39,501 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+time, mark, audio, video, ul, li, input[type=button],
+input[type=search], input[type=radio], article, main {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 0;
+    -webkit-padding-start: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'LatoRegular';
+}
+
+h2, .h2_blogs a {
+    color: #5e605f;
+    font-size: 18.7px;
+    line-height: 26px;
+}
+
+.h2_blogs a:hover{
+    color:#dd1515;
+}
+
+input {
+    background: none;
+    border: none;
+}
+
+    input:focus {
+        outline: none;
+    }
+
+    input::-webkit-search-cancel-button {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+    }
 
 /* line 22, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
-  line-height: 1;
+    line-height: 1;
 }
 
 /* line 24, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
-  list-style: none;
+    list-style: none;
 }
 
 /* line 26, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
-  border-collapse: collapse;
-  border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* line 28, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
 }
 
 /* line 30, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
-  quotes: none;
+    quotes: none;
 }
-/* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
+    /* line 103, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+    q:before, q:after, blockquote:before, blockquote:after {
+        content: "";
+        content: none;
+    }
 
 /* line 32, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
-  border: none;
+    border: none;
 }
 
 /* line 116, C:/Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
+    display: block;
+}
+
+/* line 11, ../scss/myStyle.scss */
+img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #5e605f;
+}
+
+a:hover, a:focus{
+    text-decoration: none;
+}
+
+a, p, span {
+    font-family: '2211';
+}
+
+ul li{
+    display:inline-block;
+}
+
+#classical_blog {
+
+}
+
+.content {
+    width: 1187px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 116px;
+    background: #ffffff;
+}
+
+#header {
+    height: 192px;
+    margin: 0 0 28px 0;
+}
+
+    #header .row_full_width {
+        height: 38px;
+        background: #00475b;
+    }
+
+#main_nav {
+    height: 36px;
+    border-top: 2px solid #c1c2c4;
+    border-bottom: 2px solid #c1c2c4;
+}
+
+ul.navigator {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+    ul.navigator li {
+        top: 20%;
+    }
+
+.body {
+    float: left;
+    width: 888px;
+    height: 100%;
+    display:inline-block;
+    border:1px solid rgba(158, 25, 228, 0.81);
+}
+
+.title {
+    display: inline-block;
+    border-bottom: 1px solid #c1c2c4;
+    width: 100%;
+    margin: 0 0 25px 0;
+}
+
+h3.headline {
+    color: #00475b;
+    border-bottom: 1px solid #00475b;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.1px;
+    word-spacing: -1px;
+    display: inline-block;
+    padding-bottom: 4px;
+    margin: 0 0 -1px 0;
+}
+
+
+ul.order {
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    float: right;
+}
+
+    ul.order li {
+        font-family: '2211';
+        font-size: 12px;
+        color: #000000;
+        line-height: 1.428571429;
+        margin: 0 0 0 2px;
+    }
+
+        ul.order li a {
+            font-size: 12px;
+        }
+
+        ul.order li a:hover {
+            color: #020382;
+        }
+
+.blog {
+    display:inline-block;
+    width:100%;
+    margin: 0 0 21px 0;
+}
+
+.foto {
+    position:relative;
+    height: 258px;
+    width: 376px;
+    float: left;
+}
+
+.carousel-control{
+    text-shadow:none;
+    opacity:unset;
+}
+
+a.myCarousel-control{
+    display:none;
+    position:relative;
+    top:-165px;
+    height:100px;
+    width:50px;
+    color: #034b60;
+}
+
+a.myCarousel-control.left{
+    float:left;
+}
+
+a.myCarousel-control.right{
+    float:right;
+}
+
+div.opacity{
+    position:absolute;
+    display:block;
+    width:100%;
+    height:100%;
+    z-index:2;
+    background:rgba(255, 255, 255, 0.8);
+}
+
+span.my_arrow{
+    font:30px/1 'fontello';
+    font-weight:100;
+    display:inline-block;
+    position:relative;
+    z-index:1;
+    width:100%;
+    height:100%;
+    padding:37px 0 0 0;
+
+}
+
+span.my_arrow.right:before{ 
+    margin:0 0 0 25px;
+    content: "\f105";
+}
+span.my_arrow.left:before{
+    margin:0 0 0 15px;
+    content: "\f104";
+}
+
+.foto_blog{
+    height: 242px;
+    width: 376px;
+    float: left;
+}
+
+.text {
+    float: left;
+    margin: 0 0 0 25px;
+    width:483px;
+}
+
+.h2_blogs{
+    margin:0 0 12px 0;
+    text-align:left;
+}
+
+.h2_blogs.h2_blogs_1 a{
+    font-size: 19px;
+}
+
+ul.posted{
+    width:100%;
+    margin:0 0 8px 0;
+}
+
+i.myicon:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #c1c2c4;
+    border-right:1px solid #c7d3da;
+    margin:0 7px 0 0;
+    padding:0 7px 0 0;
+    content: "\f24d";
+}
+
+i.myicon_video:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #c1c2c4;
+    border-right:1px solid #c7d3da;
+    margin:0 7px 0 0;
+    padding:0 7px 0 0;
+    content: "\f03d";
+}
+
+i.myicon_pic:before {
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #c1c2c4;
+    border-right:1px solid #c7d3da;
+    margin:0 7px 0 0;
+    padding:0 7px 0 0;
+    content: "\f03e";
+}
+
+p.posted{
+    display:inline-block;
+    border-right:1px solid #c7d3da;
+    font-size:14px;
+    padding: 0 5px 0 0;
+    margin:0 0 0 0;
+    
+}
+
+p.posted.posted_bottom{
+    border-left:0;
+    padding:0 9px 0 0;
+    margin:0;
+}
+i{
+    display:inline-block;
+}
+
+p.posted a:hover{
+    color: #dd1515;
+}
+
+.comments{
+    text-align:right;
+    float:right;
+    color: #5e605f;
+    font-size:15px;
+    margin: 0 4px 0 0;
+}
+
+span.comments:before{
+    display:inline-block;
+    position:relative;
+    font: normal normal normal 14px/1 FontAwesome;
+    top:-1px;
+    left:-5px;
+    content: "\f07c";
+}
+
+span.comments:hover:before, span.comments:hover{
+    color: #dd1515;
+}
+
+.p_text{
+    color: #000000;
+    font-size: 14px;
+    line-height: 1.428571429;
+    margin:0 0 10px 0;
+}
+
+div.stars{
+    display:inline-block;
+    position:relative;
+    top:-3px;
+    left:8px;
+}
+
+i.star_red:before {
+    display:inline-block;
+    font: normal normal normal 12px/1 FontAwesome;
+    margin:0 2px 0 0;
+    color:#c94732;
+    content: "\f005";
+}
+
+i.star_red:hover:before {
+    content: "\f006";
+}
+
+i.star_half:before {
+    display:inline-block;
+    font: normal normal normal 12px/1 FontAwesome;
+    margin:0 2px 0 0;
+    color:#c94732;
+    content: "\f123";
+}
+
+i.star:before {
+    display:inline-block;
+    font: normal normal normal 12px/1 FontAwesome;
+    margin:0 2px 0 0;
+    content: "\f006";
+}
+
+i.star:hover:before {
+    color:#c94732;
+    content: "\f005";
+}
+
+.p_text.p_text_correct{
+    padding:0 6px 0 0;
+    margin:0 0 8px 0;
+}
+
+.body_footer{
+    display:block;
+    text-align:center;
+    margin:0 0 0 0;
+    border:1px solid rgba(158, 25, 228, 0.81);
+}
+
+.pagination > li.disabled{
+    display:none;
+}
+
+.pagination li a{
+    border-color: #c7d3da;
+    color: #c7d3da;
+    width:25px;
+    height:25px;
+    padding:3px;
+    margin:0 5px 0 0;
+}
+
+.pagination > .active > a, .pagination > .active > span, 
+.pagination > .active > a:hover, 
+.pagination > .active > span:hover, 
+.pagination > .active > a:focus, 
+.pagination > .active > span:focus{
+    z-index: 3;
+    cursor: default;
+    background-color: #fff;
+    border-color: #00475b;
+    color: #00475b;
+}
+
+.right_col {
+    float: right;
+    width: 277px;
+    height: 100%;
+    display:inline-block;
+    border:1px solid rgba(158, 25, 228, 0.81);
+}
+
+ul.categories{
+    margin:0 0 40px 0;
+}
+
+ul.categories li{
+    display:block;
+    border-bottom: 1px solid #c1c2c3;
+    font-size:14px;
+    color:#c1c2c3;
+}
+
+ul.categories li a{
+    display:inline-block;
+    height:100%;
+    padding:10px 0 10px 22px;
+}
+
+ul.categories li span{
+    color:#000000;
+}
+
+ul.categories li:before{
+    display:inline-block;
+    position:absolute;
+    top:10px;
+    left:250px;
+    font: normal normal normal 14px/1 FontAwesome;
+    content: "\f105";
+}
+
+.widget_img{
+    display:inline-block;
+    width:275px;
+    height:271px;
+}
+
+#footer {
+    clear:both;
+    height: 263px;
+    background: #00475b;
 }
